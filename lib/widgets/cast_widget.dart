@@ -5,8 +5,8 @@ import 'package:movies_app/cubits/cast/cast_state.dart';
 import 'package:movies_app/widgets/home_widgets/skeletonizer.dart';
 import 'package:movies_app/widgets/home_widgets/texts_style.dart';
 
-class cast_widget extends StatelessWidget {
-  const cast_widget({super.key});
+class CastWidget extends StatelessWidget {
+  const CastWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

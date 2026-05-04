@@ -5,10 +5,6 @@ TextStyle style() {
   return TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
 }
 
-// TextStyle style2() {
-//   return TextStyle(fontSize: 16, fontWeight: FontWeight.w700);
-//}
-
 TextStyle style3() {
   return TextStyle(
     fontSize: 16,

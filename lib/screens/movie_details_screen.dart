@@ -119,7 +119,7 @@ class MovieDetailsScreen extends StatelessWidget {
                             child: Text("Cast 🎭", style: movieDetails()),
                           ),
                           const SizedBox(height: 15),
-                          cast_widget(),
+                          const CastWidget(),
                         ],
                       ),
                     ),
