@@ -93,6 +93,7 @@ class SearchScreen extends StatelessWidget {
                                   mediaType: movie['media_type'] ?? 'Unknown',
                                   popularity: (movie['popularity'] ?? 0)
                                       .toDouble(),
+                                  movieId: movie['id'],
                                 ),
                               );
                             },

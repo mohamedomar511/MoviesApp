@@ -48,6 +48,7 @@ class FavoritesScreen extends StatelessWidget {
                           voteAverage: (movie['vote_average'] ?? 0).toDouble(),
                           mediaType: movie['media_type'] ?? 'Unknown',
                           popularity: (movie['popularity'] ?? 0).toDouble(),
+                          movieId: movie['id'],
                         ),
                       ),
                     );

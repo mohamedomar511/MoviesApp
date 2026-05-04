@@ -88,6 +88,7 @@ class TrendScreen extends StatelessWidget {
                               voteAverage: voteAverage,
                               mediaType: mediaType,
                               popularity: popularity,
+                              movieId: movieIndex['id'],
                             ),
                           );
                         },

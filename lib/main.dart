@@ -1,4 +1,5 @@
 import 'package:movies_app/cubits/bottom_nav/bottom_nav_cubit.dart';
+import 'package:movies_app/cubits/cast/cast_cubit.dart';
 import 'package:movies_app/cubits/fav/fav_cubit.dart';
 import 'package:movies_app/cubits/movie/top_rated_tv_cubit.dart';
 import 'package:movies_app/cubits/search/search_cubit.dart';
@@ -18,9 +19,8 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Supabase.initialize(
-    url: 'https://sxbmfecwflziuetuqwuz.supabase.co',
-    anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4Ym1mZWN3Zmx6aXVldHVxd3V6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg3NjM3MTksImV4cCI6MjA3NDMzOTcxOX0.kJ_6STJQC1xDCLtcKA9joa1VLLm7sW-AVswKLLhbSPQ',
+    url: 'https://abjeefpirrgzxlgedqnw.supabase.co',
+    anonKey: 'sb_publishable_NtyxSop9f_EZpfmJd_Esow_0wZbhHvl',
   );
 
   Bloc.observer = MyBlocObserver();
@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => FavoriteCubit()),
         BlocProvider(create: (context) => TopTvCubit()),
         BlocProvider(create: (context) => ThemeCubit()),
+        BlocProvider(create: (context) => CastCubit()),
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
